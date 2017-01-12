@@ -141,6 +141,15 @@ ply.errorbar(x, y, xerr=xerr, yerr=yerr, marker='o', linestyle='--', color='blue
 #this prepares the graph but doesn't show you anything yet, properties used will define how it looks
 #you can use ply.plot for a plot without errorbars
 
+
+#style info:
+#linestyles: '-' solid line; '--' dashed line; ':' dotted line; '-.' dash-dotted line; 'none' no connecting lines;
+
+#colours: 'r' red; 'b' blue; 'g' green; 'c' cyan; 'm' magenta; 'y' yellow; 'k' black; 'w' white;
+
+#markers: '+' plus; '.' dot; 'o' circle; '*' star; 'p' pentagon; 's' square; 'x' x-sign; 'D' diamond; 'h' hexagon; '^' triangle;
+
+
 y2=np.exp(x) #making data for a new graph - exp of x
 y2err=2.5
 ply.errorbar(x, y2, xerr=0, yerr=y2err, marker='o', linestyle='-.', color='r', label='exp(x)')
