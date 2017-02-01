@@ -113,16 +113,25 @@ def printme( str ): #use def, set function name, in perentheses put in the perem
 class Employee:
 
 	def __init__(self, name, salary):
-       self.name = name
-       self.salary = salary
+        self.name = name
+        self.salary = salary
 
-	   def displayEmployee(self):
+	    def displayEmployee(self):
 			print("Name : ", self.name,  ", Salary: ", self.salary)
-#mate a new object
+#make a new object
 emp1 = Employee('Zara', 2000)
 emp2 = Employee('Manni', 5000)
 
 emp1.displayEmployee() #calles function from class using class's inside variables
+
+
+#inheritance
+#to make a class inherit properties of a different class:
+class Boss(Employee):
+	def __init__(self)
+#class boss will now have all of Employee's properties and can also have some of its own
+
+
 
 
 #plotting data using matplotlib
